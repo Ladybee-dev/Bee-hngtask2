@@ -1,0 +1,46 @@
+@import "@styles/mixins";
+
+.container {
+  margin-top: 150px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.title {
+  font-size: var(--display-md);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--clr-gray-500);
+}
+
+.form {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.name_wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
+.cta {
+  background-color: var(--clr-primary);
+  height: 48px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
